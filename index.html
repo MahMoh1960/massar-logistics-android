@@ -49,6 +49,13 @@
     footer a { color: var(--muted); }
   </style>
 </head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b1020">
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
 <body>
 <main>
   <header>
